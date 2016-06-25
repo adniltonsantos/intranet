@@ -3,15 +3,14 @@
 	<meta charset="utf-8">
 	<title> Intranet Linkfort </title>
 	<?php include "framework.php"?>
-	<link rel="stylesheet" href="css/estilo.css">
+	
 </head>
 <body>
 	<div id="divCenterImg">
-		
+		<img src="img/logo_linkfort.png" height="100px" width="300px">
     </div>
     <div id="divCenter">
-    <img src="img/logo_linkfort.png" height="150px" width="300px">
-        <form id="frmPost"  method="post" action="">
+        <form id="frmPost"  method="post" action="home.php">
            <div class="mdl-textfield mdl-js-textfield">
     			<input class="mdl-textfield__input" type="text" id="sample1">
    				<label class="mdl-textfield__label" for="sample1">Login...</label>
@@ -20,7 +19,9 @@
     			<input class="mdl-textfield__input" type="password" id="sample1">
    				<label class="mdl-textfield__label" for="sample1">Senha...</label>
   			</div>
-  			<button type="button" class="btn btn-block btn-large">Entrar</button>
+  			<button type="submit" class="button buttonBlue">Entrar
+    			<div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+ 			 </button>
         </form>
     </div>
 </body>
