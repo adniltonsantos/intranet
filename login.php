@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<title> Intranet Linkfort </title>
-	<?php include "framework.php"?>
+	<?php include "framework.php"; ?>
 	
 </head>
 <body>
