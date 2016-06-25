@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<title> Intranet Linkfort </title>
-	<!-- Incluindo o CSS do Bootstrap -->
-	<link href="framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<?php include "framework.php"?>
+	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-
-<!-- Incluindo o jQuery que é requisito do JavaScript do Bootstrap -->
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-
-<!-- Incluindo o JavaScript do Bootstrap -->
-<script src="framework/bootstrap/js/bootstrap.min.js"></script>
+	<div id="divCenterImg">
+		
+    </div>
+    <div id="divCenter">
+    <img src="img/logo_linkfort.png" height="150px" width="300px">
+        <form id="frmPost"  method="post" action="">
+           <div class="mdl-textfield mdl-js-textfield">
+    			<input class="mdl-textfield__input" type="text" id="sample1">
+   				<label class="mdl-textfield__label" for="sample1">Login...</label>
+  			</div>
+  			<div class="mdl-textfield mdl-js-textfield">
+    			<input class="mdl-textfield__input" type="password" id="sample1">
+   				<label class="mdl-textfield__label" for="sample1">Senha...</label>
+  			</div>
+  			<button type="button" class="btn btn-block btn-large">Entrar</button>
+        </form>
+    </div>
 </body>
 </html>
