@@ -6,6 +6,7 @@
 	
 </head>
 <body>
+  <div id="bloco">
 	<div id="divCenterImg">
 		<img src="img/logo_linkfort.png" height="100px" width="300px">
     </div>
@@ -24,5 +25,6 @@
  			 </button>
         </form>
     </div>
+  </div>
 </body>
 </html>
