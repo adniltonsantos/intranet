@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title> Intranet Linkfort </title>
+	<title> Intranet Linkfort 10</title>
 	<?php include "framework.php"; ?>
 	
 </head>
