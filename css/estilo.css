@@ -1,7 +1,8 @@
 /* Bloco Lateral do Usuario e Menus */
-#bloco-user { margin-left: 30px; margin-bottom: -20px;}
-#icon-user{padding:10px; width: 80px; height: 80px;}
-
+#bloco-user {margin-bottom: -20px; }
+#icon-user{margin-left: 30px; width: 80px; height: 80px; padding-top: 5px; }
+#menu-css {padding-left: -20px; float: left; padding: 5px;}
+#usuario {margin: 20px 0px 0px 40px; }
 /* Centralizar janela de Login*/
 #divCenter { 
   padding: 3em 2em 2em 2em;

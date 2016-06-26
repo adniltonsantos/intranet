@@ -17,7 +17,7 @@
 </center>
 
    <div id="divCenter">
-        <form id="frmPost"  method="post" action="home.php">
+        <form id="frmPost"  method="post" action="home.php?set=administrador">
            <div class="mdl-textfield mdl-js-textfield">
           <input class="mdl-textfield__input" type="text" id="sample1">
           <label class="mdl-textfield__label" for="sample1">Login...</label>

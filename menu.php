@@ -18,14 +18,44 @@
       </div>
     </div>
   </header>
+
   <!--Menu Lateral-->
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">
+   
+
+<!-- Bloco do Usuario-->
+<div id="bloco-user">
+  
+<!-- Menu do Usuario-->
+<div id="menu-css">
+<button id="menu-speed" class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">more_vert</i>
+</button>
+<ul class="mdl-menu mdl-js-menu" for="menu-speed">
+  <li class="mdl-menu__item">Sair</li>
+  <li class="mdl-menu__item">Editar Perfil</li>
+
+</ul>
+</div>
+
       <!-- Imagem e nome do usuario -->
       <div id="bloco-user">
       <img id="icon-user" class="img-circle" src="img/teste.jpg" alt="Icone do Usuário">
       </div>
-       Guilherme Britto
+
+
+
+
+<!-- Nome do Usuario -->
+
+<div id="usuario">
+ <span class="mdl-layout-title">
+Guilherme Britto
+</span>
+</div>
+
+</div>
+
     </span>
     
     <nav class="mdl-navigation">
@@ -33,10 +63,3 @@
     </nav>
   </div>
   
-  <main class="mdl-layout__content">
-    <div class="page-content">
-    <!-- Informações do campo principal -->
-      
-    </div>
-  </main>
-</div>
