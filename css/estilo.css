@@ -10,13 +10,12 @@
 	background: #fafafa;
 	border: 1px solid #ebebeb;
 	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+
 	 }
-.bloco {width: 400px; height: 320px; margin-top: -260px; position: absolute; top:50%; left: 50%; margin-left: -200px;}  
-html,body {height: 100%;}
 
 /* Centraliza img Login*/
 #divCenterImg { 
-  width: 380px;
+    width: 380px;
 	margin: 50px auto;
 	padding: 150px 50px 2px 35px;
 	 }
