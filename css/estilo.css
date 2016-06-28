@@ -7,7 +7,7 @@ img.foto-user {width: 40px; height: 40px; float:left; margin: -7px 5px 0px 0px; 
 
 
 /* Efeitos do Menu */
-#menutopo {height: 50px;  margin-top:-12px; width: auto; float: left; margin-left: 10px;}
+#menutopo {height: 50px;  margin-top:-12px; width: auto; float: right; margin-left: 10px;}
 #menutopo ul {
   padding:0px;
   margin:0px;
@@ -29,7 +29,6 @@ img.foto-user {width: 40px; height: 40px; float:left; margin: -7px 5px 0px 0px; 
 
 }
 
-#esq {float: right; margin:-20px 10px 0px 0px;}
 /* Fecha HEADER */
 
 
@@ -52,6 +51,8 @@ nav ul li.dropdown-sub-menu a:link { color: #777777; display: block; text-decora
 
 /* Fecha Menu Lateral */
 
+/* Padrao Janela */
+#janela{width:1024px; height:auto; margin:0 auto; padding-top:90px;}
 
 /* Centralizar janela de Login*/
 #divCenter { 

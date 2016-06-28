@@ -1,32 +1,47 @@
 <?php 
 
+
+// Pega as paginas via URL pela string 'PG' e inclui na body. 
+if(isset($_GET['pg'])){
+
+switch($_GET["pg"]){
+		
+		//Outra Pagina
+		case'adm';
+		include "nav/administrativo/adm.php";
+		break;
+
+}
+}
+
 // Pega o Setor via URL pela string 'SET' e inclui na body. 
 if(isset($_GET['set'])){
 
 switch($_GET['set']){
 		
 		//Setor Administrador
-		case'administrador';
-		include "nav/administrador/principal.php";
+		case'administrativo';
+		include "nav/administrativo/principal.php";
 		break;
 
-}
-
-}
-
-// Pega as paginas via URL pela string 'PG' e inclui na body. 
-
-if(isset($_GET['pg'])){
-
-switch($_GET['pg']){
-		
-		//Outra Pagina
-		case'url';
-		include "nav/venda.php";
+		//Setor Cormecial
+		case'comercial';
+		include "nav/comercial/principal.php";
 		break;
-		
-		default:
-		include ("home.php");
+
+		//Setor Estoque
+		case'estoque';
+		include "nav/estoque/principal.php";
+		break;
+
+		//Setor Financeiro
+		case'financeiro';
+		include "nav/financeiro/principal.php";
+		break;
+
+		//Setor Suporte
+		case'suporte';
+		include "nav/suporte/principal.php";
 		break;
 
 }

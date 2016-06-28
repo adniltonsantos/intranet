@@ -12,10 +12,9 @@
 
 <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
     for="demo-menu-lower-left">
-  <li class="mdl-menu__item">Some Action</li>
-  <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
-  <li disabled class="mdl-menu__item">Disabled Action</li>
-  <li class="mdl-menu__item">Yet Another Action</li>
+  <li class="mdl-menu__item">Editar Perfil</li>
+  <li class="mdl-menu__item">Sair</li>
+
 </ul>
 </div>
 
@@ -26,38 +25,31 @@
 
 <nav id="menutopo">
   <ul>
-    <li><a href="#">Financeiro</a></li>
-    <li><a href="#">Estoque</a></li>
-    <li><a href="#">Comercial</a></li>
-    <li><a href="#">Suporte</a></li>
-    <li><a href="#">Administrativo</a></li>
+    
+    <li><a href="?set=administrativo">Administrativo</a></li>
+    <li><a href="?set=comercial">Comercial</a></li>
+    <li><a href="?set=estoque">Estoque</a></li>
+    <li><a href="?set=finaceiro">Financeiro</a></li>
+    <li><a href="?set=suporte">Suporte</a></li>
+    
   </ul>
 </nav>
 
-<div id="esq">   <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                  mdl-textfield--floating-label mdl-textfield--align-right">
-        <label class="mdl-button mdl-js-button mdl-button--icon"
-               for="fixed-header-drawer-exp">
-          <i class="material-icons">search</i>
-        </label>
-        <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" name="sample"
-                 id="fixed-header-drawer-exp">
-        </div>
-      </div>
 
-
-    </div>
 
 
 </header> 
 
 <!-- Bloco do menu Lateral-->
 <aside id="bloco-menu">
+   
    <nav id="menu">
-         <ul>
+      
+      <?php if ($_GET['set'] == 'administrativo'){ ?>           
+           
+           <ul>
 
-            <li><a href='#'><span style="margin-right:10px;" class="glyphicon glyphicon-home" aria-hidden="true"></span>Link</a></li>
+            <li><a href='?set=administrativo&pg=adm'><span style="margin-right:10px;" class="glyphicon glyphicon-home" aria-hidden="true"></span>adm</a></li>
 
             <li><a href='#'><span style="margin-right:10px;" class="glyphicon glyphicon-apple" aria-hidden="true"></span>Link2</a>
                       <ul class="dropdown-sub"> 
@@ -66,9 +58,30 @@
 
                      </ul> </li>      
 
-          </ul>           
+          </ul>
+
+        <?php } ?>
+
+<?php if ($_GET['set'] == 'comercial'){ ?>           
+           
+           <ul>
+
+            <li><a href='?pg=funcionario'><span style="margin-right:10px;" class="glyphicon glyphicon-home" aria-hidden="true"></span>Comercial</a></li>
+
+            <li><a href='#'><span style="margin-right:10px;" class="glyphicon glyphicon-apple" aria-hidden="true"></span>Comercial</a>
+                      <ul class="dropdown-sub"> 
+                          <li class="dropdown-sub-menu"><a href="#">Sub-Comercial</a></li> 
+                          <li class="dropdown-sub-menu"><a href="#">Sub-Comercial</a></li> 
+
+                     </ul> </li>      
+
+          </ul>
+
+        <?php } ?>
+   
 
    </nav>
+
 </aside>
 
     
