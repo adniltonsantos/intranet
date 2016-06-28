@@ -1,8 +1,58 @@
-/* Bloco Lateral do Usuario e Menus */
-#bloco-user {margin-bottom: -20px; }
-#icon-user{margin-left: 30px; width: 80px; height: 80px; padding-top: 5px; }
-#menu-css {padding-left: -20px; float: left; padding: 5px;}
-#usuario {margin: 20px 0px 0px 40px; }
+/* HEADER */
+header#cabecalho { display: block; position: fixed; width: 100%; text-align: center; background:#034582; height:50px;font-size: 18px; color: white; font-weight: bold; padding-top: 12px; box-shadow: rgba(0,0,0,014902) 0px 0px 0px 0px,rgba(0,0,0,0.09804) 0px 0px 0px 1px;}
+#empresa {width: 150px; height: 50px; float: left; margin: -12px 0px 0px 0px; padding: 10px 0px 0px 0px; background: #023869;}
+#menu-user {float: left; margin: -4px 5px 0px 5px; }
+img.foto-user {width: 40px; height: 40px; float:left; margin: -7px 5px 0px 0px; }
+.nome-user {float: left; font-size: 16px; margin: 5px;}
+
+
+/* Efeitos do Menu */
+#menutopo {height: 50px;  margin-top:-12px; width: auto; float: left; margin-left: 10px;}
+#menutopo ul {
+  padding:0px;
+  margin:0px;
+
+}
+#menutopo ul li { display: inline; }
+
+#menutopo ul li a {
+  padding: 13px 15px;
+  display: inline-block;
+  background-color:#034582;
+  color: white;
+  text-decoration: none;
+}
+
+#menutopo ul li a:hover {
+  background-color:#045fb4;
+  color: white;
+
+}
+
+#esq {float: right; margin:-20px 10px 0px 0px;}
+/* Fecha HEADER */
+
+
+/* Menu Lateral */
+
+aside#bloco-menu {background: #CCCCCC; border-right: 1px solid #CCCCCC; width: 150px; box-shadow: rgba(0,0,0,014902) 0px 0px 0px 0px,rgba(0,0,0,0.09804) 0px 0px 0px 1px;}
+aside{position: fixed; top: 50px; left: 0; bottom: 0; display: block;}
+
+aside nav {width: 100%; padding: 0; margin: 0;}
+aside nav ul {list-style: none; padding: 0; margin: 0; }
+aside nav img {float: right;}
+aside nav a:link {padding: 6px 0px 0px 15px;  color: #777777; display: block; text-decoration: none; height: 35px; border-bottom:1px solid gray;}
+aside av a:hover {background: #DBDBEA;}
+aside nav a:visited {background: #DBDBEA; color:#777777;  border-bottom:1px solid gray;}
+
+/* Efeitos do Sub-Menu */
+nav ul li:hover .dropdown-sub{display: block; width:100%; }
+nav ul.dropdown-sub{ display: none; position: absolute; margin-top: -35px; margin-left: 150px; border-left: 5px solid gray; border-right: 1px solid #CCCCCC; border-top:1px solid #CCCCCC; background: #EEEEEE;} 
+nav ul li.dropdown-sub-menu a:link { color: #777777; display: block; text-decoration: none; height: 35px; padding-right: 20px;}
+
+/* Fecha Menu Lateral */
+
+
 /* Centralizar janela de Login*/
 #divCenter { 
   padding: 3em 2em 2em 2em;

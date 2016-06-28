@@ -1,62 +1,76 @@
 <!-- Menu lateral e Menu do Top -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <div class="mdl-layout-spacer">
-       <nav class="mdl-navigation mdl-layout--large-screen-only">
-       <!-- Links para navegação no menu lateral -->
-      </nav>
-      </div>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right"> 
-        <!--Campo para pesquisa -->
-        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
-          <i class="material-icons">search</i>
-        </label>
-        <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <!--Menu Lateral-->
-  <div class="mdl-layout__drawer">
-   
+<header id="cabecalho">
 
-<!-- Bloco do Usuario-->
-<div id="bloco-user">
-  
-<!-- Menu do Usuario-->
-<div id="menu-css">
-<button id="menu-speed" class="mdl-button mdl-js-button mdl-button--icon">
+<div id="empresa"><span class="nome-user mdl-layout-title">Link Fort Telecom</span></div>
+<!-- Left aligned menu below button -->
+<div id="menu-user">
+<button id="demo-menu-lower-left"
+        class="mdl-button mdl-js-button mdl-button--icon">
   <i class="material-icons">more_vert</i>
 </button>
-<ul class="mdl-menu mdl-js-menu" for="menu-speed">
-  <li class="mdl-menu__item">Sair</li>
-  <li class="mdl-menu__item">Editar Perfil</li>
 
+<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-left">
+  <li class="mdl-menu__item">Some Action</li>
+  <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
+  <li disabled class="mdl-menu__item">Disabled Action</li>
+  <li class="mdl-menu__item">Yet Another Action</li>
 </ul>
 </div>
 
-      <!-- Imagem e nome do usuario -->
-      <div id="bloco-user">
-      <img id="icon-user" class="img-circle" src="img/teste.jpg" alt="Icone do Usuário">
+<img class="foto-user" src="img/teste.jpg ">
+<span class="nome-user mdl-layout-title">Guilherme Britto</span>
+
+<!-- Menu do Topo -->
+
+<nav id="menutopo">
+  <ul>
+    <li><a href="#">Financeiro</a></li>
+    <li><a href="#">Estoque</a></li>
+    <li><a href="#">Comercial</a></li>
+    <li><a href="#">Suporte</a></li>
+    <li><a href="#">Administrativo</a></li>
+  </ul>
+</nav>
+
+<div id="esq">   <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp">
+        </div>
       </div>
 
 
+    </div>
 
 
-<!-- Nome do Usuario -->
+</header> 
 
-<div id="usuario">
- <span class="mdl-layout-title">
-Guilherme Britto
-</span>
-</div>
+<!-- Bloco do menu Lateral-->
+<aside id="bloco-menu">
+   <nav id="menu">
+         <ul>
 
-</div>
+            <li><a href='#'><span style="margin-right:10px;" class="glyphicon glyphicon-home" aria-hidden="true"></span>Link</a></li>
 
-    </span>
+            <li><a href='#'><span style="margin-right:10px;" class="glyphicon glyphicon-apple" aria-hidden="true"></span>Link2</a>
+                      <ul class="dropdown-sub"> 
+                          <li class="dropdown-sub-menu"><a href="#">Sub-Menu</a></li> 
+                          <li class="dropdown-sub-menu"><a href="#">Sub-Menu</a></li> 
+
+                     </ul> </li>      
+
+          </ul>           
+
+   </nav>
+</aside>
+
     
     <nav class="mdl-navigation">
       <!--Links que irão ser modificados conforme a permissão de cada usuario -->
