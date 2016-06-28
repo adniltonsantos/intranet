@@ -12,10 +12,9 @@ switch($_GET["pg"]){
 		break;
 
 }
-}
 
-// Pega o Setor via URL pela string 'SET' e inclui na body. 
-if(isset($_GET['set'])){
+}else {
+
 
 switch($_GET['set']){
 		
