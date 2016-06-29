@@ -26,7 +26,7 @@
 <nav id="menutopo">
   <ul>
     
-    <li><a href="?set=Comercial">Comercial</a></li>
+    <li><a href="?set=comercial">Comercial</a></li>
 
   </ul>
 </nav>
@@ -42,22 +42,33 @@
    <nav id="menu">
 
 
-<?php if ($_GET['set'] == 'comercial'){ ?>           
+<!--///////////////////////////////////////////////////////////////////////////////////|
+    |////////////////////  MENU LATERAL SETOR FINANCEIRO //////////////////////////////|
+    |//////////////////////////////////////////////////////////////////////////////////|-->
+
+
+        <?php if ($_GET['set'] == 'comercial'){ ?>           
            
            <ul>
 
-            <li><a href='?pg=funcionario'><span style="margin-right:10px;" class="glyphicon glyphicon-home" aria-hidden="true"></span>Comercial</a></li>
+            <li><a href='#collapse' data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
+              <span style="margin-right:10px;" class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>
+              Link 1</a>
 
-            <li><a href='#'><span style="margin-right:10px;" class="glyphicon glyphicon-apple" aria-hidden="true"></span>Comercial</a>
-                      <ul class="dropdown-sub"> 
-                          <li class="dropdown-sub-menu"><a href="#">Sub-Comercial</a></li> 
-                          <li class="dropdown-sub-menu"><a href="#">Sub-Comercial</a></li> 
+                      <ul class="collapse" id="collapse"> 
+                          <li><a href="?set=comercial&pg=comercial"><span style="margin-right:10px;" class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>Sub-Link 1</a></li> 
+                          <li><a href=""><span style="margin-right:10px;" class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>Sub-link 2</a></li> 
 
-                     </ul> </li>      
+                     </ul> </li> 
+
+           
+            <li><a href='#'><span style="margin-right:10px;" class="glyphicon glyphicon-scissors" aria-hidden="true"></span>Link 2</a></li>
+     
 
           </ul>
 
         <?php } ?>
+
    
 
    </nav>

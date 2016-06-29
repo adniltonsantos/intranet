@@ -8,7 +8,7 @@ switch($_GET["pg"]){
 		
 		//Outra Pagina
 		case'comercial';
-		include "nav/comercial/comercial.php";
+		include "nav/comercial/pg-comercial.php";
 		break;
 
 }
