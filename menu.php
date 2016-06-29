@@ -26,12 +26,8 @@
 <nav id="menutopo">
   <ul>
     
-    <li><a href="?set=administrativo">Administrativo</a></li>
-    <li><a href="?set=comercial">Comercial</a></li>
-    <li><a href="?set=estoque">Estoque</a></li>
-    <li><a href="?set=finaceiro">Financeiro</a></li>
-    <li><a href="?set=suporte">Suporte</a></li>
-    
+    <li><a href="?set=Comercial">Comercial</a></li>
+
   </ul>
 </nav>
 
@@ -44,23 +40,7 @@
 <aside id="bloco-menu">
    
    <nav id="menu">
-      
-      <?php if ($_GET['set'] == 'administrativo'){ ?>           
-           
-           <ul>
 
-            <li><a href='?set=administrativo&pg=adm'><span style="margin-right:10px;" class="glyphicon glyphicon-home" aria-hidden="true"></span>adm</a></li>
-
-            <li><a href='#'><span style="margin-right:10px;" class="glyphicon glyphicon-apple" aria-hidden="true"></span>Link2</a>
-                      <ul class="dropdown-sub"> 
-                          <li class="dropdown-sub-menu"><a href="#">Sub-Menu</a></li> 
-                          <li class="dropdown-sub-menu"><a href="#">Sub-Menu</a></li> 
-
-                     </ul> </li>      
-
-          </ul>
-
-        <?php } ?>
 
 <?php if ($_GET['set'] == 'comercial'){ ?>           
            
