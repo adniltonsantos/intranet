@@ -1,19 +1,55 @@
 /* HEADER */
-header#cabecalho { display: block; position: fixed; width: 100%; text-align: center; background:#034582; height:50px;font-size: 18px; color: white; font-weight: bold; padding-top: 12px; box-shadow: rgba(0,0,0,014902) 0px 0px 0px 0px,rgba(0,0,0,0.09804) 0px 0px 0px 1px;}
-#empresa {width: 150px; height: 50px; float: left; margin: -12px 0px 0px 0px; padding: 10px 0px 0px 0px; background: #023869;}
-#menu-user {float: left; margin: -4px 5px 0px 5px; }
-img.foto-user {width: 40px; height: 40px; float:left; margin: -7px 5px 0px 0px; }
-.nome-user {float: left; font-size: 16px; margin: 5px;}
+header#cabecalho { 
+  display: block; 
+  position: fixed; 
+  width: 100%; 
+  text-align: center; 
+  background:#034582; 
+  height:50px;font-size: 18px; 
+  color: white; 
+  font-weight: bold; 
+  padding-top: 12px; 
+  box-shadow: rgba(0,0,0,014902) 0px 0px 0px 0px,rgba(0,0,0,0.09804) 0px 0px 0px 1px;
+}
+#empresa {
+  width: 150px; 
+  height: 50px; 
+  float: left; 
+  margin: -12px 0px 0px 0px; padding: 10px 0px 0px 0px; background: #023869;
+}
+#menu-user {
+  float: left;
+  margin: -4px 5px 0px 5px; 
+}
+img.foto-user {
+  width: 40px; 
+  height: 40px; 
+  float:left; 
+  margin: -7px 5px 0px 0px; 
+}
+.nome-user {
+  float: left; 
+  font-size: 16px; 
+  margin: 5px;
+}
 
 
 /* Efeitos do Menu */
-#menutopo {height: 50px;  margin-top:-12px; width: auto; float: right; margin-left: 10px;}
+#menutopo {
+  height: 50px;  
+  margin-top:-12px; 
+  width: auto; 
+  float: right; 
+  margin-left: 10px;
+}
 #menutopo ul {
   padding:0px;
   margin:0px;
 
 }
-#menutopo ul li { display: inline; }
+#menutopo ul li { 
+  display: inline; 
+}
 
 #menutopo ul li a {
   padding: 13px 15px;
@@ -34,25 +70,60 @@ img.foto-user {width: 40px; height: 40px; float:left; margin: -7px 5px 0px 0px; 
 
 /* Menu Lateral */
 
-aside#bloco-menu {background: #CCCCCC; border-right: 1px solid #CCCCCC; width: 150px; box-shadow: rgba(0,0,0,014902) 0px 0px 0px 0px,rgba(0,0,0,0.09804) 0px 0px 0px 1px;}
-aside{position: fixed; top: 50px; left: 0; bottom: 0; display: block;}
+aside#bloco-menu {
+  background: #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+   width: 150px; 
+   box-shadow: rgba(0,0,0,014902) 0px 0px 0px 0px,rgba(0,0,0,0.09804) 0px 0px 0px 1px
+ }
+aside{
+  position: fixed; 
+  top: 50px; 
+  left: 0; 
+  bottom: 0; 
+  isplay: block;
+}
 
-aside nav {width: 100%; padding: 0; margin: 0;}
-aside nav ul {list-style: none; padding: 0; margin: 0; }
-aside nav img {float: right;}
-aside nav a:link {padding: 6px 0px 0px 15px;  color: #777777; display: block; text-decoration: none; height: 35px; border-bottom:1px solid gray;}
-aside av a:hover {background: #DBDBEA;}
-aside nav a:visited {background: #DBDBEA; color:#777777;  border-bottom:1px solid gray;}
-
-/* Efeitos do Sub-Menu */
-nav ul li:hover .dropdown-sub{display: block; width:100%; }
-nav ul.dropdown-sub{ display: none; position: absolute; margin-top: -35px; margin-left: 150px; border-left: 5px solid gray; border-right: 1px solid #CCCCCC; border-top:1px solid #CCCCCC; background: #EEEEEE;} 
-nav ul li.dropdown-sub-menu a:link { color: #777777; display: block; text-decoration: none; height: 35px; padding-right: 20px;}
+aside nav {
+  width: 100%; 
+  padding: 0; 
+  margin: 0;
+}
+aside nav ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+aside nav img {
+  float: right;
+}
+aside nav a:link {
+  padding: 6px 0px 0px 15px;  
+  color: #777777; 
+  display: block; 
+  text-decoration: none; 
+  height: 35px; 
+  border-bottom:1px solid gray;
+}
+aside av a:hover {
+  background: #DBDBEA;
+}
+aside nav a:visited {
+  background: #DBDBEA; 
+  color:#777777;  
+  border-bottom:1px solid gray;
+}
 
 /* Fecha Menu Lateral */
 
 /* Padrao Janela */
-#janela{width:1024px; height:auto; margin:0 auto; padding-top:90px;}
+#janela{
+  width:1024px; 
+  height:auto; margin: 
+  auto; padding-top:90px; 
+  border: 1px solid red;
+  padding-left: 150px
+}
 
 /* Centralizar janela de Login*/
 #divCenter { 
@@ -61,9 +132,21 @@ nav ul li.dropdown-sub-menu a:link { color: #777777; display: block; text-decora
 	border: 1px solid #ebebeb;
 	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
 	 }
-.bloco {width: 300px; height: 100px; margin-top: -260px; position: absolute; top:50%; left: 50%; margin-left: -150px;}  
-html,body {height: 100%; background-size: 100% 100%;}
+.bloco {
 
+  width: 300px; 
+  height: 100px; 
+  margin-top: -260px; 
+  position: absolute; 
+  top:50%; 
+  left: 50%; 
+  margin-left: -150px;
+}
+
+html,body {
+  height: 100%;
+  background-size: 100% 100%;
+}
 
 .button {
   position: relative;
@@ -84,13 +167,19 @@ html,body {height: 100%; background-size: 100% 100%;}
   cursor: pointer;
   transition: all 0.15s ease;
 }
-.button:focus { outline: 0; }
+
+.button:focus { 
+  outline: 0; 
+}
 
 .buttonBlue {
   background: #4a89dc;
   text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
 }
-.buttonBlue:hover { background: #357bd8; }
+
+.buttonBlue:hover { 
+  background: #357bd8; 
+}
 .ripples {
   position: absolute;
   top: 0;
